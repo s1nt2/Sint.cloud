@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +33,17 @@
             align-items: center;
             height: 400px;
         }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
         
     </style>
 </head>
@@ -43,11 +55,9 @@
     <div class="content">
         <div class="box">
             <img src="https://static.qobuz.com/images/covers/oc/ag/e6joibqlfagoc_600.jpg" alt="Droppin Doors For Fun">
-            <div>
-            <source src="https://github.com/s1nt2/Sint.cloud/raw/raw/6BH3sRLh.mp3" type="audio/mpeg">
-                </div>
-        </div>
-            </div>
+            <audio controls>
+                <source src="https://github.com/s1nt2/Sint.cloud/raw/raw/6BH3sRLh.mp3" type="audio/mpeg">
+            </audio>
         </div>
     </div>
 </body>
