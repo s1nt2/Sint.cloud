@@ -47,12 +47,7 @@
             max-height: 200px;
         }
 
-
-
-
-        
-
-.mp3-player {
+        .mp3-player {
             background-color: black;
             border-radius: 10px;
             width: 200px;
@@ -60,6 +55,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 20px; /* Added margin-bottom to create space */
         }
         
         .mp3-player h2 {
@@ -67,16 +63,7 @@
             font-size: 18px;
             margin: 0;
         }
-
-
-
-        
     </style>
-
-
-
-
-    
 </head>
 <body>
     <div class="topbar">
@@ -86,12 +73,9 @@
     <div class="content">
         <div class="box">
             <img src="https://static.qobuz.com/images/covers/oc/ag/e6joibqlfagoc_600.jpg" alt="Droppin Doors For Fun">
-            <div>
-                <div>
-            <audio controls>
-                <source src="https://github.com/s1nt2/Sint.cloud/raw/main/6BH3sRLh.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <div class="mp3-player">
+                <h2>MP3 Player</h2>
+            </div>
         </div>
     </div>
 </body>
