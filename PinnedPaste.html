@@ -21,6 +21,7 @@
             color: white;
             font-size: 24px;
             margin: 0;
+            font-family: "Comic Sans MS", cursive;
         }
         
         .content {
@@ -32,19 +33,35 @@
             height: 400px;
         }
 
+        .box {
+            background-color: gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+        
     </style>
 </head>
 <body>
     <div class="topbar">
-        <h1>SINT</h1>
+        <h1>SINT.CLOUD</h1>
     </div>
     
     <div class="content">
-            <img src="https://static.qobuz.com/images/covers/oc/ag/e6joibqlfagoc_600.jpg" alt="Pinned Paste">
-            <div class="mp3-player">
-                <h2>MP3 Player</h2>
-                </div>
-            </div>
+        <div class="box">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d4/90/e4/d490e42b-ad20-6fbd-24be-4015485a3cb7/artwork.jpg/1200x1200bf-60.jpg" alt="Pinned Paste" width="300">
+            <audio controls>
+                <source src="https://github.com/s1nt2/Sint.cloud/raw/main/PinnedPaste.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <a href="https://s1nt2.github.io/Sint.cloud/main.html" class="button">Home</a>
         </div>
     </div>
 </body>
