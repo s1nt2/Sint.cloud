@@ -50,18 +50,39 @@
         .mp3-player {
             background-color: black;
             border-radius: 10px;
-            width: 200px;
-            height: 100px;
+            width: 250px;
+            height: 80px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px; /* Added margin-bottom to create space */
+            padding: 10px;
         }
         
         .mp3-player h2 {
             color: white;
             font-size: 18px;
             margin: 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 5px;
+            background-color: gray;
+            margin-top: 10px;
+        }
+        
+        .progress {
+            width: 40%;
+            height: 100%;
+            background-color: white;
+        }
+        
+        .time-info {
+            color: white;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
@@ -75,6 +96,13 @@
             <img src="https://static.qobuz.com/images/covers/oc/ag/e6joibqlfagoc_600.jpg" alt="Droppin Doors For Fun">
             <div class="mp3-player">
                 <h2>MP3 Player</h2>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time-info">
+                    <span>0:00</span>
+                    <span>3:45</span>
+                </div>
             </div>
         </div>
     </div>
